@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pizza-bot"
+version = "0.1.0"
+description = "telegram bot for ordering pizza"
+authors = ["OleksandrGnatiuk <oleksandr.gnatiuk@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "pizza_bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sqlalchemy = "^2.0.25"
+alembic = "^1.13.1"
+pydantic = "^2.5.3"
+pydantic-settings = "^2.1.0"
+aiogram = "^3.3.0"
+python-dotenv = "1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
